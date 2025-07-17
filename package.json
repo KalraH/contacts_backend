@@ -1,0 +1,23 @@
+{
+	"name": "contacts_backend",
+	"version": "1.0.0",
+	"description": "A simple backend for managing contacts.",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"dev": "nodemon -r dotenv/config server.js"
+	},
+	"author": "Hariom Kalra",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^3.0.2",
+		"dotenv": "^17.2.0",
+		"express": "^5.1.0",
+		"express-async-handler": "^1.2.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.16.3",
+		"nodemon": "^3.1.10"
+	}
+}
