@@ -7,21 +7,6 @@ import { ErrorHandler } from '../utils/errorHandler.js';
 import { ResponseHandler } from '../utils/responseHandler.js';
 
 /**
- * @description Get All Users Data.
- * @route GET /all
- * @access Public
- */
-const getAllUsers = asyncHandler( async (req, res) => {
-	const users = await User.find();
-
-	if (!users || users.length === 0) {
-		throw new ErrorHandler(CONSTANTS.NOT_FOUND, 'No users found.');
-	}
-	
-	res.status(CONSTANTS.SUCCESS).json( new ResponseHandler( CONSTANTS.SUCCESS, 'Get All Users.', users ));
-})
-
-/**
  * @description Register a User.
  * @route POST /register
  * @param {Object} req - Request object containing user data.	
@@ -100,4 +85,4 @@ const getCurrentUser = asyncHandler( async (req, res) => {
 	res.status(CONSTANTS.SUCCESS).json( new ResponseHandler( CONSTANTS.SUCCESS, 'Current user received.', req.user ));
 })
 
-export { getAllUsers, createUser, loginUser, getCurrentUser };
+export { createUser, loginUser, getCurrentUser };
