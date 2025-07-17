@@ -10,7 +10,7 @@ A simple backend API for managing contacts. Built with Node.js, Express, and Mon
 [![nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en)
 [![Expressjs](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/Mongo%20DB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/?msockid=34257da746a36a5437bc6e6d47a56bf1)
-[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)](https://www.npmjs.com/package/jsonwebtoken) <BR>
+[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)](https://www.npmjs.com/package/jsonwebtoken) 
 [![Mongoose](https://img.shields.io/badge/Mongoose-800000?style=for-the-badge)](https://mongoosejs.com/)
 [![bcryptjs](https://img.shields.io/badge/bcrypt%20js-004488?style=for-the-badge)](https://www.npmjs.com/package/bcryptjs)
 [![dotenv](https://img.shields.io/badge/dotenv-8DD6F9?style=for-the-badge)](https://www.npmjs.com/package/dotenv)
@@ -96,49 +96,49 @@ To run this project, you will need to add the following environment variables to
 
 #### Resiger a User
 
-```http
+```js
   POST /api/users/register
 ```
 
 #### Authenticate user/login
 
-```http
+```js
   POST /api/users/login
 ```
 
 #### Get Current User
 
-```http
+```js
   GET /api/users/current
 ```
 
 #### Get all contacts
 
-```http
+```js
   GET /api/contacts
 ```
 
 #### Add a new contact
 
-```http
+```js
   POST /api/contacts
 ```
 
 #### Get a contact
 
-```http
+```js
   GET /api/contacts/:id
 ```
 
 #### Update a contact
 
-```http
+```js
   PUT /api/contacts/:id
 ```
 
 #### Delete a contact
 
-```http
+```js
   DELETE /api/contacts/:id
 ```
 
